@@ -80,7 +80,9 @@ ORDER BY OrderDate;
 
 -- Определите CustomerID, который оказался в первой строке запроса.
 SELECT * FROM Customers
-WHERE CustomerId = (SELECT CustomerId FROM Orders WHERE OrderDate BETWEEN '2023-09-05' AND '2023-10-10' LIMIT 1 );
+WHERE CustomerId = (SELECT CustomerId FROM Orders WHERE OrderDate BETWEEN '2023-09-05' AND '2023-10-10' 
+ORDER BY OrderDate ASC 
+LIMIT 1 );
 --37	Hungry Owl All-Night Grocers	Patricia McKenna	8 Johnstown Road	Cork
 
 --6. Вам необходимо получить количество заказов за сентябрь месяц  через LIKE, с
