@@ -58,7 +58,7 @@ DELETE FROM EmployeeRoles;
 DROP TABLE EmployeeRoles;
 
 /*
- Удалите все заказы со статусом 'Delivered' из таблицы OrderStatus,
+ *3. Удалите все заказы со статусом 'Delivered' из таблицы OrderStatus,
 которую создавали на семинаре
 Напишите запрос, который удалит нужные строки в таблице.
  */
